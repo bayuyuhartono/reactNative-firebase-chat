@@ -1,6 +1,6 @@
 
 
-# reactNative firebase-chat
+# reactNative firebase chat
 
 To install reactNative-firebase-chat, follow these steps:
 ## Installing
