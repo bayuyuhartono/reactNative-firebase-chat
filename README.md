@@ -22,5 +22,5 @@ $ cp .env.example .env
 ```
 run the server
 ```
-$ npm run start
+$ yarn run android
 ```
