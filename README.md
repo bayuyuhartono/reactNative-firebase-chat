@@ -1,26 +1,43 @@
 
 
-# reactNative firebase chat
 
-To install reactNative-firebase-chat, follow these steps:
+# reactNative firebase chat
+Realtime Chat App is a chatting app where we can chat with friend by just add her email, we can manage our profile and see friend profile also their location.
+
+## Requirements
+1. [Node.js](https://nodejs.org/en/)
+2. [Firebase](https://firebase.google.com/)
+3. [React Native](https://facebook.github.io/react-native/)
+5. Android Mobile or Emulator
+
 ## Installing
-clone from Github:
+To install reactjs-webfrontend-hiringChannelApp, follow these steps:
+1. clone from Github:
 ```
-$ git clone https://github.com/bayuyuhartono/reactNative-firebase-chat.git
+$ git git clone https://github.com/bayuyuhartono/reactNative-firebase-chat.git
 ```
-Move folder
+2. Move folder
 ```
 $ cd reactNative-firebase-chat
 ```
-install package
+3. install package
 ```
 $ yarn or npm install
-```
-create .env file and fill these with required things
-```
-$ cp .env.example .env
-```
-run the server
+`````
+5. connect android device and make sure your device is connected with debugging mode
+6. run android and enjoy
 ```
 $ yarn run android
 ```
+
+## Screenshoot
+
+<div align="center">
+    <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/auth.jpg">
+       <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/listchat.jpg">
+           <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/chatroom.jpg">
+               <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/profile.jpg">
+                   <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/map.jpg">
+                       <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/friendlist.jpg">
+                           <img width="150" src="https://raw.githubusercontent.com/bayuyuhartono/reactNative-firebase-chat/master/public/myprofile.jpg">
+</div>
