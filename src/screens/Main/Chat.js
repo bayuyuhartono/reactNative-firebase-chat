@@ -28,6 +28,7 @@ export default class Chat extends Component {
           onPress={() =>
             navigation.navigate('Profile', {
               name: navigation.getParam('name'),
+              uid: navigation.getParam('email'),
             })
           }>
           <Text style={{color: '#F3F0E2'}}>See Profile</Text>
@@ -42,8 +43,8 @@ export default class Chat extends Component {
       textMessage: '',
       messagesList: [],
       person: {
-        name: this.props.navigation.getParam('name'),
-        uid: this.props.navigation.getParam('email'),
+        name: props.navigation.getParam('name'),
+        uid: props.navigation.getParam('email'),
       },
       bio: [],
     };

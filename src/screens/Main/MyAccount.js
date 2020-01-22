@@ -45,6 +45,11 @@ export default class MyAccount extends Component {
           <View style={styles.bodyContent}>
             <Text style={styles.name}>{this.state.bio.name}</Text>
             <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('MyLocation')}
+              style={styles.buttonContainer}>
+              <Text style={styles.buttText}>My Location</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
               onPress={this._logOut}
               style={styles.buttonContainer}>
               <Text style={styles.buttText}>Log Out</Text>
@@ -74,7 +79,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     alignSelf: 'center',
     position: 'absolute',
-    marginTop: 130,
+    marginTop: 35,
   },
   name: {
     fontSize: 22,
@@ -82,12 +87,11 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   body: {
-    marginTop: 40,
+    marginTop: 20,
   },
   bodyContent: {
     flex: 1,
     alignItems: 'center',
-    padding: 30,
   },
   info: {
     fontSize: 16,

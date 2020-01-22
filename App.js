@@ -18,9 +18,11 @@ import Home from './src/screens/Main/Home';
 import ChatRoom from './src/screens/Main/Chat';
 import FriendList from './src/screens/Main/FriendList';
 import SplashScreen from './src/screens/SplashScreen';
+import Map from './src/screens/Main/MapFriend';
+import MyLocation from './src/screens/Main/Map';
 
 // for disable yellow box warn
-console.disableYellowBox = true;
+console.disableYellowBox = false;
 
 const AuthStack = createStackNavigator({
   SignIn,
@@ -31,6 +33,7 @@ const HomeStack = createStackNavigator({
   Home,
   ChatRoom,
   Profile,
+  Map,
 });
 
 const FriendStack = createStackNavigator({
@@ -39,6 +42,7 @@ const FriendStack = createStackNavigator({
 
 const MyAccountStack = createStackNavigator({
   MyAccount,
+  MyLocation,
 });
 
 const RootStack = createMaterialTopTabNavigator(

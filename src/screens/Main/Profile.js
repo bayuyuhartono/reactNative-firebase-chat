@@ -14,8 +14,8 @@ export default class Profile extends Component {
       title: 'Profile',
     };
   };
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {bio: []};
   }
 
@@ -32,6 +32,16 @@ export default class Profile extends Component {
             <Text style={styles.name}>
               {this.props.navigation.getParam('name')}
             </Text>
+            <TouchableOpacity
+              onPress={() =>
+                this.props.navigation.navigate('Map', {
+                  name: this.props.navigation.getParam('name'),
+                  uid: this.props.navigation.getParam('uid'),
+                })
+              }
+              style={styles.buttonContainer}>
+              <Text style={styles.buttText}>See Location</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
